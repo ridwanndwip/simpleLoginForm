@@ -5,9 +5,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Simple Login Form</title>
   <link rel="stylesheet" href="output.css">
+  <link rel="stylesheet" href="reset.css">
 </head>
 <body>
-  <h1 class="bg-slate-700">Ridwan</h1>
+  <!-- <h1 class="bg-slate-700 block">Simple LoginForm</h1> -->
+   <div class="bg-blue-300 flex m-auto justify-center items-center h-full w-full">
+    <div class="mt-8 bg-green-400 flex flex-col w-1/2" id="card">
+      <input type="text" class="bg-slate-300 border-2 focus:border-2 focus:text-gray-900 username"/>
+      <input type="password" class="bg-slate-300 password"/>
+      <button class="border-2 loginButton"> Login </button>
+    </div>
+  </div>
   <script src="index.js"></script>
 </body>
 </html>
