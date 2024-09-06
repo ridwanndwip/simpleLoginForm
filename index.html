@@ -7,15 +7,28 @@
   <link rel="stylesheet" href="output.css">
   <link rel="stylesheet" href="reset.css">
 </head>
-<body>
-  <!-- <h1 class="bg-slate-700 block">Simple LoginForm</h1> -->
-   <div class="bg-blue-300 flex m-auto justify-center items-center h-full w-full">
-    <div class="mt-8 bg-green-400 flex flex-col w-1/2" id="card">
-      <input type="text" class="bg-slate-300 border-2 focus:border-2 focus:text-gray-900 username"/>
-      <input type="password" class="bg-slate-300 password"/>
-      <button class="border-2 loginButton"> Login </button>
+<body class="flex justify-center items-center bg-cover bg-center bg-no-repeat" style="background-image: url(img/banner.jpg);">
+
+   <div class="flex flex-col justify-center items-center m-auto h-3/5 w-4/5 bg-bgContainer backdrop-blur-sm rounded-2xl drop-shadow-2xl saturate-200">
+
+    <div class="mt-8 flex flex-col w-48 gap-2" id="card">
+      
+      <div class="relative">
+        <input type="text" class="border-b-2 bg-transparent pl-2 focus:outline-none username" placeholder="Username"/>
+        <img src="img/user.png" alt="username" style="width: 15px;" class="absolute right-3 top-1">
+      </div>
+
+      <div class="relative">
+        <input type="password" class="border-b-2 bg-transparent pl-2 pb-1 focus:outline-none password mt-3" placeholder="Password"/>
+      <img src="img/lock.png" alt="password" style="width: 15px;" class="absolute right-3 top-5">
+      </div>
+
+      <button class="border-2 loginButton mt-10"> Login </button>
     </div>
+
+    <h5 class="mt-8">Don't have an account ? <b>Register</b> </h5>
   </div>
+
   <script src="index.js"></script>
 </body>
 </html>
