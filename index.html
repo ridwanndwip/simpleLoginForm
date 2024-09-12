@@ -8,25 +8,28 @@
   <link rel="stylesheet" href="reset.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;1,900&display=swap" rel="stylesheet">
 </head>
-<body class="flex justify-center items-center bg-cover bg-center bg-no-repeat font-poppins" style="background-image: url(img/newbanner.jpg);">
+<body class="flex justify-center items-center bg-cover bg-center bg-no-repeat font-poppins" style="background-image: url(img/banner.jpg);">
 
-   <div class="flex flex-col justify-center items-center m-auto h-3/5 w-4/5 bg-bgContainer backdrop-blur-sm rounded-2xl drop-shadow-2xl saturate-200jadi">
-<!-- , linear-gradient(to bottom, #ACABA9, #75706F); -->
-    <div class="flex flex-col w-48 gap-2 items-center" id="card">
+   <div class="flex flex-col justify-center items-center m-auto h-3/5 w-11/12 xs:border xs:border-baseColor rounded-3xl">
 
-      <h1 class="mb-5 m-auto font-light text-2xl text-colorText tracking-wider">Login</h1>
+    <h1 class="mx-auto font-extralight text-2xl text-baseColor tracking-widest">LOGIN</h1>
+
+    <div class="flex flex-col" id="card">
       
-      <div class="relative">
-        <input type="text" class="border-b border-colorBorder bg-transparent pl-1 pb-1 focus:outline-none username placeholder:font-light placeholder:text-xs placeholder:text-colorText placeholder:tracking-wide text-colorBorder text-xs" placeholder="Username" style="font-size: 12px; width: 205px"/>
-        <img src="img/user.png" alt="username" style="width: 13px;" class="absolute right-1 top-2">
+      <div class="relative m-0 bg-transparent rounded-2xl p-2 before:content-[''] before:absolute before:border-t-2 before:w-full before:top-0 before:right-1">
+        <input type="text" class="bg-transparent" placeholder="Username"/>
       </div>
-
-      <div class="relative">
+      
+      <div class="relative m-0 border-b-2 border-l-2 bg-transparent rounded-2xl p-2">
+        <input type="text" class="bg-transparent" placeholder="Username"/>
+      </div>
+      
+      <!-- <div class="relative">
         <input type="password" class="border-b border-colorBorder bg-transparent pl-1 pb-1 focus:outline-none password mt-3 placeholder:font-light placeholder:text-xs placeholder:text-colorText placeholder:tracking-wide" placeholder="Password"/>
-      <img src="img/pass.png" alt="password" style="width: 13px;" class="absolute right-1 top-5">
-      </div>
+        <img src="img/pass.png" alt="password" style="width: 13px;" class="absolute right-1 top-5">
+      </div> -->
 
       <button class="border-2 loginButton mt-10 bg-textColor text-white bg-tesColor1"> Login </button>
     </div>
