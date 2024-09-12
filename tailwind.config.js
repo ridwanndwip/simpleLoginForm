@@ -11,9 +11,10 @@ module.exports = {
         'poppins' : ['Poppins', 'sans-serif'],
       },
       colors:{
-        colorContainer: '#ffffff33',
-        colorText: '#393E46',
-        colorBorder: '#86868b',
+        colorContainer: '#CCD0CF33',
+        // #D3D4D8, 79797B, 7E7E80, 6B6A6C, 534f54, 5C5C5C, 4A5C6A, 06141b
+        colorText: '#F8F7F2',
+        colorBorder: '#11212D',
       },
       screens:{
         'xs': '480px',

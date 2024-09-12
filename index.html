@@ -12,20 +12,20 @@
 </head>
 <body class="flex justify-center items-center bg-cover bg-center bg-no-repeat font-poppins" style="background-image: url(img/newbanner.jpg);">
 
-   <div class="flex flex-col justify-center items-center m-auto w-64 xs:w-80 bg-colorContainer backdrop-blur-2xl rounded-2xl saturate-200 shadow-2xl py-8 px-5">
-
+   <div class="flex flex-col justify-center items-center m-auto w-64 xs:w-80 rounded-2xl saturate-200 shadow-2xl py-8 px-5 backdrop-blur-lg" style="background-image: url(img/forest.jpg); filter: blur(5px);">
+<!-- , linear-gradient(to bottom, #ACABA9, #75706F); -->
     <div class="flex flex-col w-48 gap-2 items-center" id="card">
 
       <h1 class="mb-5 m-auto font-light text-2xl text-colorText tracking-wider">Login</h1>
       
       <div class="relative">
-        <input type="text" class="border-b-2 border-colorBorder bg-transparent pl-2 pb-2 focus:outline-none username placeholder:font-light placeholder:text-xs placeholder:text-colorBorder placeholder:tracking-widest" placeholder="Username/Email"/>
-        <img src="img/user.png" alt="username" style="width: 15px;" class="absolute right-1 top-2">
+        <input type="text" class="border-b border-colorBorder bg-transparent pl-1 pb-1 focus:outline-none username placeholder:font-light placeholder:text-xs placeholder:text-colorText placeholder:tracking-wide text-colorBorder text-xs" placeholder="Username" style="font-size: 12px; width: 205px"/>
+        <img src="img/user.png" alt="username" style="width: 13px;" class="absolute right-1 top-2">
       </div>
 
       <div class="relative">
-        <input type="password" class="border-b-2 border-colorBorder bg-transparent pl-2 pb-2 focus:outline-none password mt-3 placeholder:font-light placeholder:text-xs placeholder:tracking-widest" placeholder="Password"/>
-      <img src="img/pass.png" alt="password" style="width: 15px;" class="absolute right-1 top-5">
+        <input type="password" class="border-b border-colorBorder bg-transparent pl-1 pb-1 focus:outline-none password mt-3 placeholder:font-light placeholder:text-xs placeholder:text-colorText placeholder:tracking-wide" placeholder="Password"/>
+      <img src="img/pass.png" alt="password" style="width: 13px;" class="absolute right-1 top-5">
       </div>
 
       <button class="border-2 loginButton mt-10 bg-textColor text-white bg-tesColor1"> Login </button>
