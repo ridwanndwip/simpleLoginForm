@@ -16,27 +16,31 @@
 
     <h1 class="mx-auto font-extralight text-2xl text-baseColor tracking-widest mb-10">LOGIN</h1>
 
-    <div class="flex flex-col" id="card">
-      
-      <div class="relative bg-transparent rounded-2xl p-2">
-        <!-- before:content-[''] before:absolute before:border-r-2 before:w-1/2 before:h-full before:rounded-full before:top-1 before:right-1 -->
-        <input type="text" class="bg-transparent placeholder:text-sm placeholder:font-extralight placeholder:text-baseColor placeholder:tracking-wide border-b border-baseColor text-center pb-1" style="border-image: linear-gradient(to right, #813232, #000000);" placeholder="Email"/>
-        <!-- border-image: linear-gradient(to right, #E7E7E7 0%, E7E7E7 30%, E7E7E7 70%, #E7E7E7 100%); -->
+    <div class="flex flex-col" id="form">  
+      <div class="relative bg-transparent rounded-2xl p-2 bg-slate-00">
+        <img src="img/mail.png" alt="Email Logo" style="width: 15px;" class="absolute top-3.5 left-4 imgMail opacity-0">
+        <input id="username" type="text" class="username bg-transparent text-baseColor placeholder:text-xs placeholder:font-extralight placeholder:text-baseColor placeholder:text-gray-600 placeholder:tracking-wide border-b text-center pb-1 focus:outline-none" style="border-image: linear-gradient(to right, #e7e7e700 0%, #E7E7E7 30%, #E7E7E7 70%, #e7e7e700 100%) 1;" placeholder="Email"/>
       </div>
-      
-      <div class=" mt-20 relative m-0 border-b-2 border-l-2 bg-transparent rounded-2xl p-2">
-        <input type="text" class="bg-transparent" placeholder="Username"/>
-      </div>
-      
-      <!-- <div class="relative">
-        <input type="password" class="border-b border-colorBorder bg-transparent pl-1 pb-1 focus:outline-none password mt-3 placeholder:font-light placeholder:text-xs placeholder:text-colorText placeholder:tracking-wide" placeholder="Password"/>
-        <img src="img/pass.png" alt="password" style="width: 13px;" class="absolute right-1 top-5">
-      </div> -->
 
-      <button class="border-2 loginButton mt-10 bg-textColor text-white bg-tesColor1"> Login </button>
+      <div class="relative bg-transparent rounded-2xl p-2">
+        <img src="img/show_password.png" alt="Show Pass Logo" style="width: 15px;" class="absolute top-3.5 left-4 imgPass opacity-0">
+        <input type="password" class="password bg-transparent placeholder:text-xs placeholder:font-extralight placeholder:text-baseColor placeholder:text-gray-600 placeholder:tracking-wide border-b text-center pb-1 focus:outline-none" style="border-image: linear-gradient(to right, #e7e7e700 0%, #E7E7E7 30%, #E7E7E7 70%, #e7e7e700 100%) 1;" placeholder="Password"/>
+      </div>
     </div>
 
-    <h5 class="mt-8">Don't have an account ? <b>Register</b> </h5>
+    <ul class="flex justify-between w-10/12 items-center mt-3">
+      <li class="flex items-center gap-1 items-center">
+        <input type="checkbox" style="width: 12px;">
+        <span class="text-xs text-baseColor font-extralight tracking-wide"> Remember Me</span>
+      </li>
+      <li class="flex items-center">
+        <span class="text-baseColor text-xs font-extralight underline tracking-wide"> Forgot Password?</span>
+      </li>
+    </ul>
+    
+    <button class="font-extralight text-sm tracking-widest mt-10 bg-textColor text-white bg-tesColor1 border rounded-2xl py-2 px-24" id="signIn"> Sign in </button>
+
+    <h5 class="mt-4 text-baseColor font-extralight tracking-wide text-sm">Don't have an account ? <b>Register</b></h5>
   </div>
 
   <script src="index.js"></script>
