@@ -566,25 +566,16 @@ video {
   right: 0.25rem;
 }
 
-.top-2 {
-  top: 0.5rem;
-}
-
 .top-5 {
   top: 1.25rem;
-}
-
-.m-auto {
-  margin: auto;
 }
 
 .m-0 {
   margin: 0px;
 }
 
-.my-auto {
-  margin-top: auto;
-  margin-bottom: auto;
+.m-auto {
+  margin: auto;
 }
 
 .mx-auto {
@@ -592,8 +583,16 @@ video {
   margin-right: auto;
 }
 
+.mb-10 {
+  margin-bottom: 2.5rem;
+}
+
 .mt-10 {
   margin-top: 2.5rem;
+}
+
+.mt-20 {
+  margin-top: 5rem;
 }
 
 .mt-3 {
@@ -604,36 +603,12 @@ video {
   margin-top: 2rem;
 }
 
-.mb-5 {
-  margin-bottom: 1.25rem;
-}
-
-.mt-5 {
-  margin-top: 1.25rem;
-}
-
-.mt-2 {
-  margin-top: 0.5rem;
-}
-
-.block {
-  display: block;
-}
-
 .flex {
   display: flex;
 }
 
 .h-3\/5 {
   height: 60%;
-}
-
-.w-4\/5 {
-  width: 80%;
-}
-
-.w-48 {
-  width: 12rem;
 }
 
 .w-11\/12 {
@@ -652,14 +627,6 @@ video {
   justify-content: center;
 }
 
-.gap-2 {
-  gap: 0.5rem;
-}
-
-.rounded-lg {
-  border-radius: 0.5rem;
-}
-
 .rounded-2xl {
   border-radius: 1rem;
 }
@@ -672,24 +639,8 @@ video {
   border-width: 2px;
 }
 
-.border {
-  border-width: 1px;
-}
-
 .border-b {
   border-bottom-width: 1px;
-}
-
-.border-r {
-  border-right-width: 1px;
-}
-
-.border-t {
-  border-top-width: 1px;
-}
-
-.border-l {
-  border-left-width: 1px;
 }
 
 .border-b-2 {
@@ -700,35 +651,13 @@ video {
   border-left-width: 2px;
 }
 
-.border-r-2 {
-  border-right-width: 2px;
-}
-
-.border-t-2 {
-  border-top-width: 2px;
-}
-
-.border-b-4 {
-  border-bottom-width: 4px;
-}
-
 .border-baseColor {
   --tw-border-opacity: 1;
   border-color: rgb(231 231 231 / var(--tw-border-opacity));
 }
 
-.border-gray-200 {
-  --tw-border-opacity: 1;
-  border-color: rgb(229 231 235 / var(--tw-border-opacity));
-}
-
 .bg-transparent {
   background-color: transparent;
-}
-
-.bg-green-400 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(74 222 128 / var(--tw-bg-opacity));
 }
 
 .bg-cover {
@@ -743,10 +672,6 @@ video {
   background-repeat: no-repeat;
 }
 
-.p-4 {
-  padding: 1rem;
-}
-
 .p-2 {
   padding: 0.5rem;
 }
@@ -759,6 +684,10 @@ video {
   padding-left: 0.25rem;
 }
 
+.text-center {
+  text-align: center;
+}
+
 .font-poppins {
   font-family: Poppins, sans-serif;
 }
@@ -768,55 +697,22 @@ video {
   line-height: 2rem;
 }
 
-.text-xs {
-  font-size: 0.75rem;
-  line-height: 1rem;
-}
-
-.text-4xl {
-  font-size: 2.25rem;
-  line-height: 2.5rem;
-}
-
-.text-3xl {
-  font-size: 1.875rem;
-  line-height: 2.25rem;
-}
-
-.text-6xl {
-  font-size: 3.75rem;
-  line-height: 1;
-}
-
-.text-sm {
-  font-size: 0.875rem;
-  line-height: 1.25rem;
-}
-
-.font-light {
-  font-weight: 300;
-}
-
 .font-extralight {
   font-weight: 200;
-}
-
-.tracking-wider {
-  letter-spacing: 0.05em;
 }
 
 .tracking-widest {
   letter-spacing: 0.1em;
 }
 
-.text-white {
-  --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-
 .text-baseColor {
   --tw-text-opacity: 1;
   color: rgb(231 231 231 / var(--tw-text-opacity));
+}
+
+.text-white {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 .drop-shadow {
@@ -828,6 +724,22 @@ video {
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
 
+.backdrop-blur-md {
+  --tw-backdrop-blur: blur(12px);
+  -webkit-backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
+  backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
+}
+
+.placeholder\:text-sm::-moz-placeholder {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
+.placeholder\:text-sm::placeholder {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
 .placeholder\:text-xs::-moz-placeholder {
   font-size: 0.75rem;
   line-height: 1rem;
@@ -836,6 +748,14 @@ video {
 .placeholder\:text-xs::placeholder {
   font-size: 0.75rem;
   line-height: 1rem;
+}
+
+.placeholder\:font-extralight::-moz-placeholder {
+  font-weight: 200;
+}
+
+.placeholder\:font-extralight::placeholder {
+  font-weight: 200;
 }
 
 .placeholder\:font-light::-moz-placeholder {
@@ -854,19 +774,19 @@ video {
   letter-spacing: 0.025em;
 }
 
+.placeholder\:text-baseColor::-moz-placeholder {
+  --tw-text-opacity: 1;
+  color: rgb(231 231 231 / var(--tw-text-opacity));
+}
+
+.placeholder\:text-baseColor::placeholder {
+  --tw-text-opacity: 1;
+  color: rgb(231 231 231 / var(--tw-text-opacity));
+}
+
 .before\:absolute::before {
   content: var(--tw-content);
   position: absolute;
-}
-
-.before\:top-0::before {
-  content: var(--tw-content);
-  top: 0px;
-}
-
-.before\:right-2::before {
-  content: var(--tw-content);
-  right: 0.5rem;
 }
 
 .before\:right-1::before {
@@ -879,24 +799,19 @@ video {
   top: 0.25rem;
 }
 
-.before\:w-6::before {
+.before\:h-full::before {
   content: var(--tw-content);
-  width: 1.5rem;
+  height: 100%;
 }
 
-.before\:w-full::before {
+.before\:w-1\/2::before {
   content: var(--tw-content);
-  width: 100%;
+  width: 50%;
 }
 
-.before\:rounded-3xl::before {
+.before\:rounded-full::before {
   content: var(--tw-content);
-  border-radius: 1.5rem;
-}
-
-.before\:border-t-2::before {
-  content: var(--tw-content);
-  border-top-width: 2px;
+  border-radius: 9999px;
 }
 
 .before\:border-r-2::before {
@@ -904,29 +819,8 @@ video {
   border-right-width: 2px;
 }
 
-.before\:border-b-2::before {
-  content: var(--tw-content);
-  border-bottom-width: 2px;
-}
-
-.before\:bg-green-400::before {
-  content: var(--tw-content);
-  --tw-bg-opacity: 1;
-  background-color: rgb(74 222 128 / var(--tw-bg-opacity));
-}
-
-.before\:content-\[\'\*\'\]::before {
-  --tw-content: '*';
-  content: var(--tw-content);
-}
-
 .before\:content-\[\'\'\]::before {
   --tw-content: '';
-  content: var(--tw-content);
-}
-
-.before\:content-\[\'r\'\]::before {
-  --tw-content: 'r';
   content: var(--tw-content);
 }
 

@@ -10,19 +10,21 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;1,900&display=swap" rel="stylesheet">
 </head>
-<body class="flex justify-center items-center bg-cover bg-center bg-no-repeat font-poppins" style="background-image: url(img/banner.jpg);">
+<body class="flex justify-center items-center bg-cover bg-center bg-no-repeat font-poppins backdrop-blur-md" style="background-image: url(img/banner.jpg);">
 
    <div class="flex flex-col justify-center items-center m-auto h-3/5 w-11/12 xs:border xs:border-baseColor rounded-3xl">
 
-    <h1 class="mx-auto font-extralight text-2xl text-baseColor tracking-widest">LOGIN</h1>
+    <h1 class="mx-auto font-extralight text-2xl text-baseColor tracking-widest mb-10">LOGIN</h1>
 
     <div class="flex flex-col" id="card">
       
-      <div class="relative m-0 bg-transparent rounded-2xl p-2 before:content-[''] before:absolute before:border-t-2 before:w-full before:top-0 before:right-1">
-        <input type="text" class="bg-transparent" placeholder="Username"/>
+      <div class="relative bg-transparent rounded-2xl p-2">
+        <!-- before:content-[''] before:absolute before:border-r-2 before:w-1/2 before:h-full before:rounded-full before:top-1 before:right-1 -->
+        <input type="text" class="bg-transparent placeholder:text-sm placeholder:font-extralight placeholder:text-baseColor placeholder:tracking-wide border-b border-baseColor text-center pb-1" style="border-image: linear-gradient(to right, #813232, #000000);" placeholder="Email"/>
+        <!-- border-image: linear-gradient(to right, #E7E7E7 0%, E7E7E7 30%, E7E7E7 70%, #E7E7E7 100%); -->
       </div>
       
-      <div class="relative m-0 border-b-2 border-l-2 bg-transparent rounded-2xl p-2">
+      <div class=" mt-20 relative m-0 border-b-2 border-l-2 bg-transparent rounded-2xl p-2">
         <input type="text" class="bg-transparent" placeholder="Username"/>
       </div>
       
