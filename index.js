@@ -1,33 +1,40 @@
 const imgMail = document.querySelector('#form .imgMail');
 const imgPass = document.querySelector('#form .imgPass');
-const userName = imgMail.nextElementSibling;
-const passWord = imgPass.nextElementSibling;
+// const userName = imgMail.nextElementSibling;
+// const passWord = imgPass.nextElementSibling;
 
-userName.addEventListener('focus',()=>{
+imgMail.nextElementSibling.addEventListener('focus',()=>{
     imgMail.style.opacity = '1';
-    imgMail.parentElement.classList.add('active') 
+    imgMail.parentElement.classList.add('active')
+    imgMail.nextElementSibling.style.borderBottom = '1px solid #E7E7E7'
 })
 
-userName.addEventListener('blur',()=>{
-  if(userName.value.trim() !== ''){
-    imgMail.style.opacity = '1'; 
+imgMail.nextElementSibling.addEventListener('blur',()=>{
+  if(imgMail.nextElementSibling.value.trim() !== ''){
+    imgMail.style.opacity = '1';
+    imgMail.nextElementSibling.style.borderBottom = '1px solid #E7E7E7'
+    
   }else{
     imgMail.style.opacity = '0'; 
     imgMail.parentElement.classList.remove('active')
+    imgMail.nextElementSibling.style.borderBottom = '1px solid #6b7280'
   }
 })
 
-passWord.addEventListener('focus',()=>{
+imgPass.nextElementSibling.addEventListener('focus',()=>{
   imgPass.style.opacity = '1';
   imgPass.parentElement.classList.add('active') 
+  imgPass.nextElementSibling.style.borderBottom = '1px solid #E7E7E7'
 })
 
-passWord.addEventListener('blur',()=>{
-if(passWord.value.trim() !== ''){
-  imgPass.style.opacity = '1'; 
+imgPass.nextElementSibling.addEventListener('blur',()=>{
+if(imgPass.nextElementSibling.value.trim() !== ''){
+  imgPass.style.opacity = '1';
+  imgPass.nextElementSibling.style.borderBottom = '1px solid #E7E7E7' 
 }else{
   imgPass.style.opacity = '0'; 
   imgPass.parentElement.classList.remove('active')
+  imgPass.nextElementSibling.style.borderBottom = '1px solid #6b7280'
 }
 })
 
