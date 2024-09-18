@@ -50,6 +50,9 @@ html, body{
     scroll-behavior: smooth; 
 }
 
+body{
+    background-image: linear-gradient(to bottom, #00b8a033 40%, #00000033 70%), url('/img/banner_min.jpg');
+}
 /* Modified Active Class */
 
 .active::before{
